@@ -19,6 +19,11 @@ namespace Posh_Nosh_Form
             InitializeComponent();
         }
 
+        /// <summary>
+        /// This method adds the price of the selected item
+        /// onto the total cost and then updates the total
+        /// label to show the correct price so far
+        /// </summary>
         private void dessertSelection(object sender, EventArgs e)
         {
             switch (dessertComboBox.Text)
@@ -33,6 +38,11 @@ namespace Posh_Nosh_Form
             totalLabel.Text = "£" + totalCost.ToString("0.00");
         }
 
+        /// <summary>
+        /// This method adds the price of the selected item
+        /// onto the total cost and then updates the total
+        /// label to show the correct price so far
+        /// </summary>
         private void starterSelection(object sender, EventArgs e)
         {
             switch (starterListBox.Text)
@@ -47,6 +57,11 @@ namespace Posh_Nosh_Form
             totalLabel.Text = "£" + totalCost.ToString("0.00");
         } 
         
+        /// <summary>
+        /// This method adds the price of the selected item
+        /// onto the total cost and then updates the total
+        /// label to show the correct price so far.
+        /// </summary>
         private void mainSelection(object sender, EventArgs e)
         {
             switch (mainListBox.Text)
